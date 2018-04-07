@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 
-class App extends Component {
+class ButtonMessage extends Component {
   handleClick = () => {
     import('./moduleA')
       .then(({ moduleA }) => {
@@ -13,7 +12,6 @@ class App extends Component {
   };
 
   render() {
-
     return (
       <div> 
         <button onClick={this.handleClick}>Login</button>
@@ -22,4 +20,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default ButtonMessage;

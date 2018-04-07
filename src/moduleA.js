@@ -2,4 +2,11 @@ import React, { Component } from 'react';
 
 const moduleA = 'Hello';
 
-export { moduleA };
+
+
+// use {} to  export certain objects
+//export { moduleA };
+
+// or use default for entire component
+// or to assign aliases on import
+export default moduleA;
