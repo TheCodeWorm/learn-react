@@ -21,7 +21,7 @@ class App extends Component {
       <div> 
         <button onClick={this.handleClick}>7</button>
         <button onClick={this.handleClick}>8</button>
-        <span> </span>
+        <span>{this.result} </span>
       </div>
     );
   }
