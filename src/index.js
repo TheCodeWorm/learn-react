@@ -4,7 +4,16 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-const element1 = <h1>Hello, world!</h1>
+function formatName(user) {
+	return user.firstName + ' ' + user.lastName;
+};
+
+const user = {
+	firstName: 'Harper',
+	lastName: 'Perez'
+};
+
+const element1 = <h1>Hello, {formatName(user)}!</h1>
 
 ReactDOM.render(
 	element1,
