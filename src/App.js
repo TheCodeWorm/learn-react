@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-let result = 3;
+let result = 8;
 
 class App extends Component {
   result = 7;
@@ -18,7 +18,7 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{textAlign:'center'}}> 
+      <div> 
         <button onClick={this.handleClick}>7</button>
         <button onClick={this.handleClick}>8</button>
         <span> </span>
