@@ -5,15 +5,21 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 function formatName(user) {
-	return user.firstName + ' ' + user.lastName;
+	if (user) {
+		return user.firstName + ' ' + user.lastName;
+	}
 };
 
-const user = {
-	firstName: 'Harper',
-	lastName: 'Perez'
-};
+const user = [{
+	firstName: 'Olive',
+	lastName: 'Bootlid'
+}, 
+{
+    firstName: 'Noel',
+    lastName: 'Caceres'
+}];
 
-const element1 = <h1>Hello, {formatName(user)}!</h1>
+const element1 = <h1>Hello, {formatName(user[0])}!</h1>
 
 ReactDOM.render(
 	element1,
