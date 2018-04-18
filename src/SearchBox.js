@@ -2,7 +2,11 @@ import React from 'react';
 
 const SearchBox = () => {
 	return (
-		<input type='search' placeholder='search robots' />
+		<input 
+			className='pa3 ba b--green bg-lightest-blue'
+			type='search' 
+			placeholder='search robots' 
+		/>
 	);
 }
 
