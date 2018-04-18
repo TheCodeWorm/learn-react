@@ -14,18 +14,17 @@ class App extends Component {
 
 	onSearchChange = (event) => {
 		this.setState({ searchfield: event.target.value });
-		const filteredContacts = this.state.contacts.filter(contacts => {
-			return contacts.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
-		})
-		console.log(filteredContacts);
 	}
 
 	render() {
+		const filteredContacts = this.state.contacts.filter(contacts => {
+			return contacts.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+		})
 		return (
 			<div className='tc'>
 				<h1>Robofriends</h1>
 				<SearchBox searchChange={this.onSearchChange}/>
-				<CardList contacts={this.state.contacts}/>
+				<CardList contacts={filteredContacts}/>
 			</div>
 		)
 	}
