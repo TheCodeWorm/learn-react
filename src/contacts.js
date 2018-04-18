@@ -22,4 +22,22 @@ export const contacts = [
 	name: 'Patty Santos',
 	username: 'pSantos',
 	email: 'pSantos@gmail.com'
+}, 
+{
+	id: 5,
+	name: 'Daniel Boom',
+	username: 'dBoom',
+	email: 'dBoom@gmail.com'
+},
+{
+	id: 6,
+	name: 'Cindy Davis',
+	username: 'cDavis',
+	email: 'cDavis@gmail.com'
+},
+{
+	id: 7,
+	name: 'Ben Samson',
+	username: 'bSamson',
+	email: 'bSamson@gmail.com'
 }];
