@@ -1,6 +1,5 @@
 import React from 'react'
 import './card.css';
-import contacts from './contacts';
  
 // props destructured in parameter
 const Card = ({ name, email, id }) => {
