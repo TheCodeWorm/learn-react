@@ -3,6 +3,7 @@ import './App.css';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import Header from '../components/Header';
 
 class App extends Component {
 	constructor() {
@@ -38,6 +39,7 @@ class App extends Component {
 		<h1>Loading</h1> :
 			( 
 				<div className='tc'>
+				  <Header />
 					<h1 className='f1'>Robofriends</h1>
 					<SearchBox searchChange={this.onSearchChange}/>
 					<Scroll>
